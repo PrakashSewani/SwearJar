@@ -48,5 +48,10 @@ async def on_message(message):
             await message.delete()
             return
     return
+
+key = ''
+
+with open('key.txt','r') as f:
+    key = f.read()
     
-client.run('ODI0MTcxODUwMTkwOTQ2MzA0.YFrf2Q.LcMsocF0yT9poZ2-MFqMBdtHX_k')
+client.run(key)
